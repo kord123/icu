@@ -255,9 +255,9 @@
         <param name="res.dir" value="${eclipse.projects.dir}/plugins/com.ibm.icu/src/${icu4j.data.path}/translit"/>
     </antcall>
 
-<!--    <antcall target="@full-locale-names">-->
-<!--        <param name="res.dir" value="${eclipse.projects.dir}/plugins/com.ibm.icu/src/${icu4j.data.path}/zone"/>-->
-<!--    </antcall>-->
+    <antcall target="@full-locale-names">
+        <param name="res.dir" value="${eclipse.projects.dir}/plugins/com.ibm.icu/src/${icu4j.data.path}/zone"/>
+    </antcall>
 
     <!-- plugin project -->
     <copy todir="${eclipse.projects.dir}/plugins/com.ibm.icu">

@@ -45,6 +45,7 @@
                 <exclude name="${icu4j.data.path}/lang/**"/>
                 <exclude name="${icu4j.data.path}/region/**"/>
                 <exclude name="${icu4j.data.path}/translit/**"/>
+                <exclude name="${icu4j.data.path}/rbnf/**"/>
                 <exclude name="**/*.cnv"/>
                 <exclude name="**/cnvalias.icu"/>
             </patternset>
@@ -64,9 +65,9 @@
 <!--            <param name="res.dir" value="${bin.dir}/${icu4j.data.path}/brkitr"/>-->
 <!--        </antcall>-->
 
-        <antcall target="@full-locale-names">
-            <param name="res.dir" value="${bin.dir}/${icu4j.data.path}/rbnf"/>
-        </antcall>
+<!--        <antcall target="@full-locale-names">-->
+<!--            <param name="res.dir" value="${bin.dir}/${icu4j.data.path}/rbnf"/>-->
+<!--        </antcall>-->
 
 <!--        <antcall target="@full-locale-names">-->
 <!--            <param name="res.dir" value="${bin.dir}/${icu4j.data.path}/zone"/>-->
