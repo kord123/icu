@@ -38,6 +38,8 @@
             <patternset>
                 <exclude name="META-INF"/>
                 <exclude name="META-INF/**/*"/>
+                <exclude name="${icu4j.data.path}/brkitr/**"/>
+                <exclude name="${icu4j.data.path}/zone/**"/>
                 <exclude name="${icu4j.data.path}/coll/**"/>
                 <exclude name="${icu4j.data.path}/curr/**"/>
                 <exclude name="${icu4j.data.path}/lang/**"/>
@@ -58,17 +60,17 @@
             <param name="res.dir" value="${bin.dir}/${icu4j.data.path}"/>
         </antcall>
 
-        <antcall target="@full-locale-names">
-            <param name="res.dir" value="${bin.dir}/${icu4j.data.path}/brkitr"/>
-        </antcall>
+<!--        <antcall target="@full-locale-names">-->
+<!--            <param name="res.dir" value="${bin.dir}/${icu4j.data.path}/brkitr"/>-->
+<!--        </antcall>-->
 
         <antcall target="@full-locale-names">
             <param name="res.dir" value="${bin.dir}/${icu4j.data.path}/rbnf"/>
         </antcall>
 
-        <antcall target="@full-locale-names">
-            <param name="res.dir" value="${bin.dir}/${icu4j.data.path}/zone"/>
-        </antcall>
+<!--        <antcall target="@full-locale-names">-->
+<!--            <param name="res.dir" value="${bin.dir}/${icu4j.data.path}/zone"/>-->
+<!--        </antcall>-->
     </target>
 
     <target name="set-icuconfig-datapath" if="icu4c.data.path">

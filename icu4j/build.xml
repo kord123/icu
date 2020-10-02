@@ -697,14 +697,14 @@
                 compress="true"
                 manifest="${out.dir}/manifest.stub">
             <fileset dir="${icu4j.core.dir}/${bin.dir}" includes="**/*"/>
-            <fileset dir="${icu4j.collate.dir}/${bin.dir}" includes="**/*"/>
-            <fileset dir="${icu4j.currdata.dir}/${bin.dir}" includes="**/*"/>
-            <fileset dir="${icu4j.langdata.dir}/${bin.dir}" includes="**/*"/>
-            <fileset dir="${icu4j.regiondata.dir}/${bin.dir}" includes="**/*"/>
-            <fileset dir="${icu4j.translit.dir}/${bin.dir}" includes="**/*"/>
-            <fileset dir="${shared.dir}/licenses">
-                <include name="LICENSE"/>
-            </fileset>
+<!--            <fileset dir="${icu4j.collate.dir}/${bin.dir}" includes="**/*"/>-->
+<!--            <fileset dir="${icu4j.currdata.dir}/${bin.dir}" includes="**/*"/>-->
+<!--            <fileset dir="${icu4j.langdata.dir}/${bin.dir}" includes="**/*"/>-->
+<!--            <fileset dir="${icu4j.regiondata.dir}/${bin.dir}" includes="**/*"/>-->
+<!--            <fileset dir="${icu4j.translit.dir}/${bin.dir}" includes="**/*"/>-->
+<!--            <fileset dir="${shared.dir}/licenses">-->
+<!--                <include name="LICENSE"/>-->
+<!--            </fileset>-->
         </jar>
     </target>
 
